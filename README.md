@@ -54,3 +54,11 @@ Hero section stacked vertically on mobile and displayed in two columns on deskto
 Grid layout displayed 1 column on mobile, 2 columns on tablet, and 4 columns on desktop
 
 Hover styles worked on buttons and cards
+
+Q4:
+- Chart caption:
+  This chart shows a positive relationship between study hours and exam scores.
+  Based on this trend, I would encourage students to increase consistent study time to improve performance.
+
+- Decision based on chart:
+  Students who study fewer than five hours should prioritize structured study schedules to improve exam outcomes.
