@@ -1,1 +1,149 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-card {
+  width: 240px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  align-self: flex-start;
+}
+
+/* =====================
+   GRID SECTION
+===================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding-bottom: 40px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* =====================
+   HOVER STYLES
+===================== */
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  padding: 16px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* =====================
+   RESPONSIVE BREAKPOINTS
+===================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    margin-top: 12px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
